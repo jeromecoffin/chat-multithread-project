@@ -120,3 +120,24 @@ textarea:focus,
 	position: absolute;   
 
 	}
+
+#box {
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+    background: #42a5f5;
+	color: #fff !important;
+	border-radius: 20px 20px 3px 20px;
+	display: block;
+	max-width: 75%;
+	padding: 7px 13px 7px 13px;
+}
+
+#box::before{
+	content: attr(data-is);
+	position: absolute;
+	right: 15px;
+	bottom: -0.8em;
+	display: block;
+	font-size: .750rem;
+	color: rgba(84, 110, 122,1.0);
+}

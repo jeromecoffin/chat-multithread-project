@@ -5,29 +5,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="chat.css">
-        <style>
-            #box {
-                width: 500px;
-                height: 200px;
-                overflow-x: auto;
-                border: 2px solid gray;
-                font-family: monospace;
-            }
-        </style>
+        <link rel="stylesheet" href="index.css">
     </head>
 
     <body>
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="Emrick.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                Prenom
-            </a>
-        </nav>
-        
-        <div id="box"></div>
-        <input type="text" id="msg">
+        <div class="jumbotron m-0 p-0 bg-transparent">
+            <div class="row m-0 p-0 position-relative">
+                <div class="col-12 p-0 m-0 position-absolute" style="right: 0px;">
+                    <div class="card border-0 rounded" style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10), 0 6px 10px 0 rgba(0, 0, 0, 0.01); overflow: hidden; height: 100vh;">
+                        <div class="card-header p-1 bg-light border border-top-0 border-left-0 border-right-0" style="color: rgba(96, 125, 139,1.0);">
+                            <img class="rounded float-left" style="width: 50px; height: 50px;" src="Emrick.png" />
+                            <h6 class="float-left" style="margin: 0px; margin-left: 10px;"> Emrick Donadei <i class="fa fa-check text-primary" aria-hidden="true"></i> </br><small> Boston, US </small></h6>
+                        </div>
+                        <div class="card bg-sohbet border-0 m-0 p-0" style="height: 100vh;">
+                            <div id="sohbet" class="border-0 m-0 p-0 position-relative bg-transparent" style="overflow-y: auto; height: 100vh;">
+                                <div id="box" class="float-right"></div>
+                            </div>
+                        </div>
+                        <div class="w-100 card-footer p-0 bg-light border border-bottom-0 border-left-0 border-right-0">
+                            <div class="row m-0 p-0">
+                                <div class="col-9 m-0 p-1">
+                                    <input type="text" id="msg">
+                                </div>
+                                <div class="col-3 m-0 p-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <script src="client.js"></script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     </body>
 </html>
